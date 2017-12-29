@@ -1,4 +1,15 @@
 Acknowledgmenet: this is basically a copy of https://github.com/vim-scripts/functionlist.vim
 
-I made a few tiny changes to work with Python.
+I made a few tiny changes to work with Python etc.
+
+* Looks for lines that have "def " in them (rather than "function")
+* Leaves functions sorted in order they appear in the file (to turn sorting 
+  back on, uncomment the line in 'function! s:index()' ).
+
+Suggested: map to leader+z like so in your .vimrc:
+
+  :nnoremap <Leader>z :Flisttoggle<CR>
+
+
+
 

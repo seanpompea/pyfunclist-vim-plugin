@@ -329,7 +329,7 @@ function! s:index()
 		endif
 		let l:lnc+=1
 	endwhile
-	let l:flistd = sort(l:flistd)
+	"let l:flistd = sort(l:flistd)
 		let l:lineno = 0
 	for l:a in l:flistd
 		let l:index = l:lookup[l:a]
