@@ -15,6 +15,7 @@
 "
 " Last Change:	2011 Aug
 " Maintainer:	Sandeep.c.r<sandeepcr2@gmail.com>
+" This is a tweaked version for Python, see github/seanpompea/pyfunclist-vim-plugin
 "
 " This plugin displays a list of all lines with word 'function' in current
 " file/buffer. This list is sorted on function name. It also maintains a list of
@@ -354,7 +355,7 @@ function! s:Repos()
 	call s:switch_wnd(b:srcbuf)
 	call setpos('.',['.', l:lineno,0,0])
 	exe 'normal zz'
-	call s:toggle()
+	"call s:toggle()
 endfunction
 
 
@@ -385,7 +386,7 @@ function! s:ReposRecent()
 		call s:switch_wnd(b:srcbuf)
 		call setpos('.',['.', l:lix,0,0])
 		exe 'normal zz'
-		call s:toggle()
+		"call s:toggle()
 	endif
 endfunction
 
